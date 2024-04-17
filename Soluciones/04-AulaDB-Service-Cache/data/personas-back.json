@@ -1,0 +1,263 @@
+[
+    {
+        "id": 10,
+        "nombre": "Estudiante 1",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 18,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 11,
+        "nombre": "Estudiante 2",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 20,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 12,
+        "nombre": "Estudiante 3",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 22,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 13,
+        "nombre": "Updated",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 23,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 14,
+        "nombre": "Estudiante 5",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 26,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 16,
+        "nombre": "Estudiante 7",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 30,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 17,
+        "nombre": "Estudiante 8",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 32,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 18,
+        "nombre": "Estudiante 9",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 34,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 19,
+        "nombre": "Estudiante 10",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 19,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 20,
+        "nombre": "Estudiante 11",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 21,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 21,
+        "nombre": "Estudiante 12",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 23,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 22,
+        "nombre": "Estudiante 13",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 25,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 23,
+        "nombre": "Estudiante 14",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 27,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 24,
+        "nombre": "Estudiante 15",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 29,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 25,
+        "nombre": "Estudiante 16",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 31,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 26,
+        "nombre": "Estudiante 17",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 33,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 27,
+        "nombre": "Estudiante 18",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 35,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 28,
+        "nombre": "Estudiante 19",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 37,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 29,
+        "nombre": "Estudiante 20",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 39,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 30,
+        "nombre": "Estudiante 21",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 18,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 31,
+        "nombre": "Estudiante 22",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 20,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 32,
+        "nombre": "Estudiante 23",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 22,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 33,
+        "nombre": "Estudiante 24",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 24,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 34,
+        "nombre": "Estudiante 25",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 26,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 35,
+        "nombre": "Estudiante 26",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 28,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 36,
+        "nombre": "Estudiante 27",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 30,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 37,
+        "nombre": "Estudiante 28",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 32,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 38,
+        "nombre": "Estudiante 29",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 34,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    },
+    {
+        "id": 39,
+        "nombre": "Estudiante 30",
+        "created_at": "2024-04-08",
+        "tipo": "Estudiante",
+        "edad": 36,
+        "updated_at": "2024-04-08",
+        "is_deleted": false
+    }
+]

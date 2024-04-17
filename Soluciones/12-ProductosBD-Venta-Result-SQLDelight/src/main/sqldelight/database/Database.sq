@@ -1,0 +1,169 @@
+-- Database: Tablas y Operaciones CRUD
+
+-- Tabla de Productos
+CREATE TABLE IF NOT EXISTS ProductoEntity (
+    id INTEGER PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    precio REAL NOT NULL,
+    stock INTEGER NOT NULL,
+    categoria TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    is_deleted INTEGER NOT NULL DEFAULT 0
+);
+
+-- Operaciones CRUD para la tabla de Productos
+removeAllProductos:
+DELETE FROM ProductoEntity;
+
+selectAllProductos:
+SELECT * FROM ProductoEntity;
+
+selectProductoById:
+SELECT * FROM ProductoEntity WHERE id = ?;
+
+selectAllProductosByIsDeleted:
+SELECT * FROM ProductoEntity WHERE is_deleted = ?;
+
+selectAllProductosByCategoria:
+SELECT * FROM ProductoEntity WHERE categoria = ?;
+
+-- De esta manera podremos hacerlo sin transacciones
+-- selectLastInserted:
+-- SELECT * FROM ProductoEntity ORDER BY id DESC LIMIT 1;
+
+-- selectLastInserted:
+-- SELECT * FROM ProductoEntity WHERE id = (SELECT MAX(id) FROM ProductoEntity);
+
+-- De esta manera podremos hacerlo con transacciones usando la función last_insert_rowid() de SQLite
+selectProductoLastInserted:
+SELECT * FROM ProductoEntity WHERE id = last_insert_rowid();
+
+insertProducto:
+INSERT INTO ProductoEntity (nombre, precio, stock, categoria, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?);
+
+-- insertProducto:
+-- INSERT INTO ProductoEntity (nombre, precio, stock, categoria, created_at, updated_at) VALUES ?;
+
+updateProducto:
+UPDATE ProductoEntity SET nombre = ?, precio = ?, stock = ?, categoria = ?, updated_at = ?, is_deleted = ? WHERE id = ?;
+
+deleteProducto:
+DELETE FROM ProductoEntity WHERE id = ?;
+
+-- Tabla de Clientes
+CREATE TABLE IF NOT EXISTS ClienteEntity (
+      id INTEGER PRIMARY KEY,
+      nombre TEXT NOT NULL,
+      email TEXT NOT NULL UNIQUE,
+      created_at TEXT NOT NULL,
+      updated_at TEXT NOT NULL,
+      is_deleted INTEGER NOT NULL DEFAULT 0
+);
+
+-- Operaciones CRUD para la tabla de Clientes
+removeAllClientes:
+DELETE FROM ClienteEntity;
+
+selectAllClientes:
+SELECT * FROM ClienteEntity;
+
+selectClienteById:
+SELECT * FROM ClienteEntity WHERE id = ?;
+
+selectAllClientesByIsDeleted:
+SELECT * FROM ClienteEntity WHERE is_deleted = ?;
+
+selectClienteLastInserted:
+SELECT * FROM ClienteEntity WHERE id = last_insert_rowid();
+
+insertCliente:
+INSERT INTO ClienteEntity (nombre, email, created_at, updated_at) VALUES (?, ?, ?, ?);
+
+updateCliente:
+UPDATE ClienteEntity SET nombre = ?, email = ?, updated_at = ?, is_deleted = ? WHERE id = ?;
+
+deleteCliente:
+DELETE FROM ClienteEntity WHERE id = ?;
+
+-- Tabla de Ventas
+CREATE TABLE IF NOT EXISTS VentaEntity (
+    id TEXT PRIMARY KEY,
+    cliente_id INTEGER NOT NULL REFERENCES ClienteEntity(id),
+    total REAL NOT NULL,
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    is_deleted INTEGER NOT NULL DEFAULT 0
+);
+
+-- Operaciones CRUD para la tabla de Ventas
+removeAllVentas:
+DELETE FROM VentaEntity;
+
+selectAllVentas:
+SELECT * FROM VentaEntity;
+
+selectVentaById:
+SELECT * FROM VentaEntity WHERE id = ?;
+
+existsVenta:
+SELECT COUNT(*) FROM VentaEntity WHERE id = ?;
+
+selectAllVentasByIsDeleted:
+SELECT * FROM VentaEntity WHERE is_deleted = ?;
+
+selectVentaLastInserted:
+SELECT * FROM VentaEntity WHERE id = last_insert_rowid();
+
+insertVenta:
+INSERT INTO VentaEntity (id, cliente_id, total, created_at, updated_at) VALUES (?, ?, ?, ?, ?);
+
+updateVenta:
+UPDATE VentaEntity SET cliente_id = ?, total = ?, updated_at = ?, is_deleted = ? WHERE id = ?;
+
+deleteVenta:
+DELETE FROM VentaEntity WHERE id = ?;
+
+-- Tabla de Lineas de Ventas
+CREATE TABLE IF NOT EXISTS LineaVentaEntity (
+     id TEXT PRIMARY KEY,
+     venta_id TEXT NOT NULL REFERENCES VentaEntity(id),
+     producto_id INTEGER NOT NULL REFERENCES ProductoEntity(id),
+     cantidad INTEGER NOT NULL,
+     precio REAL NOT NULL,
+     created_at TEXT NOT NULL,
+     updated_at TEXT NOT NULL,
+     is_deleted INTEGER NOT NULL DEFAULT 0
+);
+
+-- Operaciones CRUD para la tabla de Lineas de Ventas
+removeAllLineasVentas:
+DELETE FROM LineaVentaEntity;
+
+selectAllLineasVentas:
+SELECT * FROM LineaVentaEntity;
+
+selectLineaVentaById:
+SELECT * FROM LineaVentaEntity WHERE id = ?;
+
+selectAllLineasVentaByVentaId:
+SELECT * FROM LineaVentaEntity WHERE venta_id = ?;
+
+selectAllLineasVentasByIsDeleted:
+SELECT * FROM LineaVentaEntity WHERE is_deleted = ?;
+
+selectLineaVentaLastInserted:
+SELECT * FROM LineaVentaEntity WHERE id = last_insert_rowid();
+
+insertLineaVenta:
+INSERT INTO LineaVentaEntity (id, venta_id, producto_id, cantidad, precio, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?);
+
+updateLineaVenta:
+UPDATE LineaVentaEntity SET venta_id = ?, producto_id = ?, cantidad = ?, precio = ?, updated_at = ?, is_deleted = ? WHERE id = ?;
+
+deleteLineaVenta:
+DELETE FROM LineaVentaEntity WHERE id = ?;
+
+
+
+

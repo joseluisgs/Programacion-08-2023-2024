@@ -1,0 +1,51 @@
+
+DROP TABLE Lineas_Ventas;
+DROP TABLE Ventas;
+DROP TABLE Clientes;
+DROP TABLE Productos;
+
+CREATE TABLE Productos (
+       id BIGINT PRIMARY KEY AUTO_INCREMENT,
+       nombre TEXT NOT NULL,
+       precio REAL NOT NULL,
+       stock INTEGER NOT NULL,
+       categoria ENUM('ELECTRONICA', 'DEPORTE', 'MODA', 'OTROS') NOT NULL,
+       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+       is_deleted BOOLEAN DEFAULT false
+);
+
+CREATE TABLE Clientes (
+      id BIGINT PRIMARY KEY AUTO_INCREMENT,
+      nombre TEXT NOT NULL,
+      email TEXT NOT NULL UNIQUE,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+      is_deleted BOOLEAN DEFAULT false
+);
+
+CREATE TABLE Ventas (
+    id UUID PRIMARY KEY,
+    cliente_id BIGINT NOT NULL REFERENCES clientes(id),
+    total REAL NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    is_deleted BOOLEAN DEFAULT false
+);
+
+
+CREATE TABLE Lineas_Ventas (
+     id UUID PRIMARY KEY,
+     venta_id UUID NOT NULL REFERENCES ventas(id),
+     producto_id BIGINT NOT NULL REFERENCES productos(id),
+     cantidad INTEGER NOT NULL,
+     precio REAL NOT NULL,
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+     is_deleted BOOLEAN DEFAULT false
+);
+
+
+
+
+

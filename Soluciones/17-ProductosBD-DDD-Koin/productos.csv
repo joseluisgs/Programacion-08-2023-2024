@@ -1,0 +1,13 @@
+nombre, precio, stock, categoria
+Portátil de última generación,1500.0,80,ELECTRONICA
+Auriculares inalámbricos,200.0,150,ELECTRONICA
+Smartwatch resistente al agua,120.0,200,ELECTRONICA
+Zapatillas de running,80.0,300,DEPORTE
+Chaqueta deportiva,70.0,400,DEPORTE
+Pantalones de yoga,50.0,500,DEPORTE
+Reloj de pulsera elegante,300.0,100,MODA
+Gafas de sol de diseñador,250.0,120,MODA
+Bolso de cuero genuino,180.0,150,MODA
+Libreta de cuero artesanal,40.0,200,OTROS
+Mochila de viaje resistente,60.0,250,OTROS
+Botella de agua reutilizable,10.0,300,OTROS

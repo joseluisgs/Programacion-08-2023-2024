@@ -1,0 +1,47 @@
+{
+    "id": "8528604e-abd4-4411-93eb-038e1fc7c983",
+    "cliente": {
+        "id": 1,
+        "nombre": "Juan Pérez",
+        "email": "juan@email.com",
+        "createdAt": "2024-04-15T20:53:24.913221900",
+        "updatedAt": "2024-04-15T20:53:24.913221900"
+    },
+    "lineas": [
+        {
+            "id": "abfc0020-ccd5-47db-aef8-49d3687d2cbd",
+            "producto": {
+                "id": 3,
+                "nombre": "Tablet",
+                "precio": 300.0,
+                "stock": 300,
+                "categoria": "ELECTRONICA",
+                "createdAt": "2024-04-15T20:53:24.834689400",
+                "updatedAt": "2024-04-15T20:53:24.834689400"
+            },
+            "cantidad": 2,
+            "precio": 300.0,
+            "createdAt": "2024-04-15T20:53:24.913221900",
+            "updatedAt": "2024-04-15T20:53:24.913221900"
+        },
+        {
+            "id": "e28c49c5-1191-4f68-9522-88fb32084d72",
+            "producto": {
+                "id": 5,
+                "nombre": "Camiseta",
+                "precio": 50.0,
+                "stock": 500,
+                "categoria": "DEPORTE",
+                "createdAt": "2024-04-15T20:53:24.834689400",
+                "updatedAt": "2024-04-15T20:53:24.834689400"
+            },
+            "cantidad": 1,
+            "precio": 50.0,
+            "createdAt": "2024-04-15T20:53:24.913221900",
+            "updatedAt": "2024-04-15T20:53:24.913221900"
+        }
+    ],
+    "total": 350.0,
+    "createdAt": "2024-04-15T20:53:24.913221900",
+    "updatedAt": "2024-04-15T20:53:24.913221900"
+}

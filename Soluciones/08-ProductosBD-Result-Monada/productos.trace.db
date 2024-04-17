@@ -1,0 +1,314 @@
+2024-04-08 16:34:19.981162+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS productos (\000d\000a    id BIGINT PRIMARY KEY,\000d\000a    nombre TEXT NOT NULL,\000d\000a    precio REAL NOT NULL,\000d\000a    stock INTEGER NOT NULL,\000d\000a    categoria ENUM('Electrónica', 'Deporte', 'Moda', 'Otros'),\000d\000a    created_at TIMESTAMP [*]on create DEFAULT CURRENT_TIMESTAMP,\000d\000a    updated_at TIMESTAMP on create DEFAULT CURRENT_TIMESTAMP,\000d\000a    is_deleted BOOLEAN default false\000d\000a)\000d\000a"; se esperaba "(, WITH TIME ZONE, WITHOUT TIME ZONE, ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS productos (\000d\000a    id BIGINT PRIMARY KEY,\000d\000a    nombre TEXT NOT NULL,\000d\000a    precio REAL NOT NULL,\000d\000a    stock INTEGER NOT NULL,\000d\000a    categoria ENUM('Electrónica', 'Deporte', 'Moda', 'Otros'),\000d\000a    created_at TIMESTAMP [*]on create DEFAULT CURRENT_TIMESTAMP,\000d\000a    updated_at TIMESTAMP on create DEFAULT CURRENT_TIMESTAMP,\000d\000a    is_deleted BOOLEAN default false\000d\000a)\000d\000a"; expected "(, WITH TIME ZONE, WITHOUT TIME ZONE, ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS productos (
+    id BIGINT PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    precio REAL NOT NULL,
+    stock INTEGER NOT NULL,
+    categoria ENUM('Electrónica', 'Deporte', 'Moda', 'Otros'),
+    created_at TIMESTAMP on create DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP on create DEFAULT CURRENT_TIMESTAMP,
+    is_deleted BOOLEAN default false
+)
+ [42001-224]
+2024-04-08 16:34:19.994166+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+DELETE
+FROM productos
+ [42104-224]
+2024-04-08 16:34:19.994166+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+INSERT INTO productos (id, nombre, precio, stock, categoria)
+VALUES (1, 'Laptop', 1000, 100, 'Electrónica'),
+       (2, 'Smartphone', 500, 200, 'Electrónica'),
+       (3, 'Tablet', 300, 300, 'Electrónica'),
+       (4, 'Zapatillas', 100, 400, 'Deporte'),
+       (5, 'Camiseta', 50, 500, 'Deporte'),
+       (6, 'Pantalón', 70, 600, 'Deporte'),
+       (7, 'Reloj', 200, 700, 'Moda'),
+       (8, 'Gafas', 150, 800, 'Moda'),
+       (9, 'Bolso', 80, 900, 'Moda'),
+       (10, 'Libro', 20, 1000, 'Otros'),
+       (11, 'Mochila', 40, 1100, 'Otros'),
+       (12, 'Botella', 10, 1200, 'Otros')
+ [42104-224]
+2024-04-08 16:34:20.000157+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+SELECT * FROM productos [42104-224]
+2024-04-08 16:34:20.033163+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+SELECT * FROM productos [42104-224]
+2024-04-08 16:34:20.045158+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+SELECT * FROM productos [42104-224]
+2024-04-08 16:35:34.257472+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS productos (\000d\000a    id BIGINT PRIMARY KEY,\000d\000a    nombre TEXT NOT NULL,\000d\000a    precio REAL NOT NULL,\000d\000a    stock INTEGER NOT NULL,\000d\000a    categoria ENUM('Electrónica', 'Deporte', 'Moda', 'Otros'),\000d\000a    created_at TIMESTAMP [*]on create DEFAULT CURRENT_TIMESTAMP,\000d\000a    updated_at TIMESTAMP on create DEFAULT CURRENT_TIMESTAMP,\000d\000a    is_deleted BOOLEAN default false\000d\000a)\000d\000a"; se esperaba "(, WITH TIME ZONE, WITHOUT TIME ZONE, ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS productos (\000d\000a    id BIGINT PRIMARY KEY,\000d\000a    nombre TEXT NOT NULL,\000d\000a    precio REAL NOT NULL,\000d\000a    stock INTEGER NOT NULL,\000d\000a    categoria ENUM('Electrónica', 'Deporte', 'Moda', 'Otros'),\000d\000a    created_at TIMESTAMP [*]on create DEFAULT CURRENT_TIMESTAMP,\000d\000a    updated_at TIMESTAMP on create DEFAULT CURRENT_TIMESTAMP,\000d\000a    is_deleted BOOLEAN default false\000d\000a)\000d\000a"; expected "(, WITH TIME ZONE, WITHOUT TIME ZONE, ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS productos (
+    id BIGINT PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    precio REAL NOT NULL,
+    stock INTEGER NOT NULL,
+    categoria ENUM('Electrónica', 'Deporte', 'Moda', 'Otros'),
+    created_at TIMESTAMP on create DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP on create DEFAULT CURRENT_TIMESTAMP,
+    is_deleted BOOLEAN default false
+)
+ [42001-224]
+2024-04-08 16:35:34.264473+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+DELETE
+FROM productos
+ [42104-224]
+2024-04-08 16:35:34.265471+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+INSERT INTO productos (id, nombre, precio, stock, categoria)
+VALUES (1, 'Laptop', 1000, 100, 'Electrónica'),
+       (2, 'Smartphone', 500, 200, 'Electrónica'),
+       (3, 'Tablet', 300, 300, 'Electrónica'),
+       (4, 'Zapatillas', 100, 400, 'Deporte'),
+       (5, 'Camiseta', 50, 500, 'Deporte'),
+       (6, 'Pantalón', 70, 600, 'Deporte'),
+       (7, 'Reloj', 200, 700, 'Moda'),
+       (8, 'Gafas', 150, 800, 'Moda'),
+       (9, 'Bolso', 80, 900, 'Moda'),
+       (10, 'Libro', 20, 1000, 'Otros'),
+       (11, 'Mochila', 40, 1100, 'Otros'),
+       (12, 'Botella', 10, 1200, 'Otros')
+ [42104-224]
+2024-04-08 16:35:34.273469+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+SELECT * FROM productos [42104-224]
+2024-04-08 16:35:34.316804+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+SELECT * FROM productos [42104-224]
+2024-04-08 16:35:34.337273+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTOS" not found (this database is empty); SQL statement:
+SELECT * FROM productos [42104-224]
+2024-04-08 16:41:41.190415+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor no permitido para la columna "('Electrónica', 'Deporte', 'Moda', 'Otros')": "ELECTRONICA"
+Value not permitted for column "('Electrónica', 'Deporte', 'Moda', 'Otros')": "ELECTRONICA"; SQL statement:
+INSERT INTO productos (id, nombre, precio, stock, categoria)
+VALUES (1, 'Laptop', 1000, 100, 'ELECTRONICA'),
+       (2, 'Smartphone', 500, 200, 'ELECTRONICA'),
+       (3, 'Tablet', 300, 300, 'ELECTRONICA'),
+       (4, 'Zapatillas', 100, 400, 'DEPORTE'),
+       (5, 'Camiseta', 50, 500, 'DEPORTE'),
+       (6, 'Pantalón', 70, 600, 'DEPORTE'),
+       (7, 'Reloj', 200, 700, 'MODA'),
+       (8, 'Gafas', 150, 800, 'MODA'),
+       (9, 'Bolso', 80, 900, 'MODA'),
+       (10, 'Libro', 20, 1000, 'OTROS'),
+       (11, 'Mochila', 40, 1100, 'OTROS'),
+       (12, 'Botella', 10, 1200, 'OTROS') [22030-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.value.ExtTypeInfoEnum.getValue(ExtTypeInfoEnum.java:175)
+	at org.h2.value.Value.convertToEnum(Value.java:2315)
+	at org.h2.value.Value.convertTo(Value.java:1195)
+	at org.h2.value.Value.convertForAssignTo(Value.java:1113)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:369)
+	at org.h2.table.Table.convertInsertRow(Table.java:936)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.apache.ibatis.jdbc.ScriptRunner.executeStatement(ScriptRunner.java:250)
+	at org.apache.ibatis.jdbc.ScriptRunner.handleLine(ScriptRunner.java:225)
+	at org.apache.ibatis.jdbc.ScriptRunner.executeLineByLine(ScriptRunner.java:154)
+	at org.apache.ibatis.jdbc.ScriptRunner.runScript(ScriptRunner.java:121)
+	at dev.joseluisgs.services.database.DataBaseManager.scriptRunner(DataBaseManager.kt:109)
+	at dev.joseluisgs.services.database.DataBaseManager.initData(DataBaseManager.kt:39)
+	at dev.joseluisgs.services.database.DataBaseManager.<clinit>(DataBaseManager.kt:27)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl.findAll(ProductosRepositoryImpl.kt:24)
+	at dev.joseluisgs.services.productos.ProductosServicesImpl.getAll(ProductosServicesImpl.kt:16)
+	at dev.joseluisgs.MainKt.main(Main.kt:15)
+	at dev.joseluisgs.MainKt.main(Main.kt)
+2024-04-08 16:56:18.941383+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Función "LAST_INSERT_ID" no encontrada
+Function "LAST_INSERT_ID" not found; SQL statement:
+SELECT LAST_INSERT_ID() [90022-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readFunction(Parser.java:3786)
+	at org.h2.command.Parser.readTermWithIdentifier(Parser.java:5148)
+	at org.h2.command.Parser.readTerm(Parser.java:4834)
+	at org.h2.command.Parser.readFactor(Parser.java:3337)
+	at org.h2.command.Parser.readSum(Parser.java:3324)
+	at org.h2.command.Parser.readConcat(Parser.java:3289)
+	at org.h2.command.Parser.readCondition(Parser.java:3079)
+	at org.h2.command.Parser.readExpression(Parser.java:2999)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2799)
+	at org.h2.command.Parser.parseSelect(Parser.java:2817)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2708)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529)
+	at org.h2.command.Parser.parseQuery(Parser.java:2498)
+	at org.h2.command.Parser.parsePrepared(Parser.java:627)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:94)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl$save$2.invoke(ProductosRepositoryImpl.kt:81)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl$save$2.invoke(ProductosRepositoryImpl.kt:67)
+	at dev.joseluisgs.services.database.DataBaseManager.use(DataBaseManager.kt:93)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl.save(ProductosRepositoryImpl.kt:67)
+	at dev.joseluisgs.services.productos.ProductosServicesImpl.create(ProductosServicesImpl.kt:27)
+	at dev.joseluisgs.MainKt.main(Main.kt:27)
+	at dev.joseluisgs.MainKt.main(Main.kt)
+2024-04-08 17:04:35.113724+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO productos (nombre, precio, stock, categoria, created_at, updated_at, is_deleted) VALUES (?, ?, ?, ?, ?, ?, ?) [90002-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.Prepared.query(Prepared.java:256)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:252)
+	at org.h2.command.Command.executeQuery(Command.java:192)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:131)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl$save$2.invoke(ProductosRepositoryImpl.kt:82)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl$save$2.invoke(ProductosRepositoryImpl.kt:69)
+	at dev.joseluisgs.services.database.DataBaseManager.use(DataBaseManager.kt:93)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl.save(ProductosRepositoryImpl.kt:69)
+	at dev.joseluisgs.services.productos.ProductosServicesImpl.create(ProductosServicesImpl.kt:27)
+	at dev.joseluisgs.MainKt.main(Main.kt:27)
+	at dev.joseluisgs.MainKt.main(Main.kt)
+2024-04-08 17:20:00.828756+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+UPDATE productos SET is_deleted = true WHERE id =? [90002-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.Prepared.query(Prepared.java:256)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:252)
+	at org.h2.command.Command.executeQuery(Command.java:192)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:131)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl$delete$2.invoke(ProductosRepositoryImpl.kt:131)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl$delete$2.invoke(ProductosRepositoryImpl.kt:126)
+	at dev.joseluisgs.services.database.DataBaseManager.use(DataBaseManager.kt:93)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl.delete(ProductosRepositoryImpl.kt:126)
+	at dev.joseluisgs.services.productos.ProductosServicesImpl.delete(ProductosServicesImpl.kt:38)
+	at dev.joseluisgs.MainKt.main(Main.kt:39)
+	at dev.joseluisgs.MainKt.main(Main.kt)
+2024-04-08 17:20:08.985971+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+UPDATE productos SET is_deleted = true WHERE id =? [90002-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.Prepared.query(Prepared.java:256)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:252)
+	at org.h2.command.Command.executeQuery(Command.java:192)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:131)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl$delete$2.invoke(ProductosRepositoryImpl.kt:131)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl$delete$2.invoke(ProductosRepositoryImpl.kt:126)
+	at dev.joseluisgs.services.database.DataBaseManager.use(DataBaseManager.kt:93)
+	at dev.joseluisgs.repositories.productos.ProductosRepositoryImpl.delete(ProductosRepositoryImpl.kt:126)
+	at dev.joseluisgs.services.productos.ProductosServicesImpl.delete(ProductosServicesImpl.kt:38)
+	at dev.joseluisgs.MainKt.main(Main.kt:39)
+	at dev.joseluisgs.MainKt.main(Main.kt)
+2024-04-09 13:55:15 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-04-09 13:55:19 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-04-09 13:55:31 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-04-09 13:56:03 jdbc[4]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
